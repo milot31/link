@@ -60,6 +60,13 @@ class NewContactViewController: UIViewController, MFMessageComposeViewController
             //playa
         }
         
+        if self.revealViewController() != nil {
+            navigationItem.rightBarButtonItem?.target = self.revealViewController()
+            navigationItem.rightBarButtonItem?.action = "rightRevealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.revealViewController().rearViewRevealOverdraw = 0
+        }
+        
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
         phoneNumberTextField.delegate = self
