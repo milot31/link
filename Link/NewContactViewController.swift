@@ -34,7 +34,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 }
 
 
-class NewContactViewController: UIViewController, MFMessageComposeViewControllerDelegate, UITextFieldDelegate {
+class NewContactViewController: UIViewController {
 
     var contactStore = CNContactStore()
 
@@ -88,11 +88,9 @@ class NewContactViewController: UIViewController, MFMessageComposeViewController
     
     func navBarSetup() {
         navigationController?.navigationBar.barTintColor = UIColor(red:0.35, green:0.53, blue:0.78, alpha:1.00)
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:0.84, green:0.95, blue:1.00, alpha:1.00)//, NSFontAttributeName: UIFont(name: "Kailasa", size: 44)!]
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:0.84, green:0.95, blue:1.00, alpha:1.00)
     ]
         navigationItem.title = "Link"
-//        navigationItem.titleView?.sizeToFit()
-//        navigationController?.navigationBar.tit
         navigationController?.navigationBar.isTranslucent = false
         
         self.title = "Link"
@@ -118,56 +116,6 @@ class NewContactViewController: UIViewController, MFMessageComposeViewController
             messageVC.messageComposeDelegate = self;
             
             self.present(messageVC, animated: false, completion: nil)
-        }
-    }
-
-    func messageComposeViewController(_ controller: MFMessageComposeViewController!, didFinishWith result: MessageComposeResult) {
-        openTextFieldAnimation = true
-        switch (result) {
-        case MessageComposeResult.cancelled:
-            print("Message was cancelled")
-            self.dismiss(animated: true, completion: nil)
-            animateFieldsOpen()
-        case MessageComposeResult.failed:
-            print("Message failed")
-            self.dismiss(animated: true, completion: nil)
-            animateFieldsOpen()
-        case MessageComposeResult.sent:
-            print("Message was sent")
-            self.dismiss(animated: true, completion: nil)
-            firstNameTextField.text = ""
-            lastNameTextField.text = ""
-            phoneNumberTextField.text = ""
-            animateFieldsOpen()
-        default:
-            break;
-        }
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        switch textField {
-        case firstNameTextField:
-            lastNameTextField.becomeFirstResponder()
-        case lastNameTextField:
-            phoneNumberTextField.becomeFirstResponder()
-        case phoneNumberTextField:
-            textField.resignFirstResponder()
-        default:
-            break
-        }
-        return false
-    }
-    
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        openTextFieldAnimation = false
-        animateFieldsShut()
-        return true
-    }
-    
-
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if openTextFieldAnimation {
-            animateFieldsOpen()
         }
     }
     
@@ -254,4 +202,63 @@ class NewContactViewController: UIViewController, MFMessageComposeViewController
         }
     }
 }
+
+
+
+extension NewContactViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case firstNameTextField:
+            lastNameTextField.becomeFirstResponder()
+        case lastNameTextField:
+            phoneNumberTextField.becomeFirstResponder()
+        case phoneNumberTextField:
+            textField.resignFirstResponder()
+        default:
+            break
+        }
+        return false
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        openTextFieldAnimation = false
+        animateFieldsShut()
+        return true
+    }
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if openTextFieldAnimation {
+            animateFieldsOpen()
+        }
+    }
+}
+
+
+
+extension NewContactViewController: MFMessageComposeViewControllerDelegate {
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        openTextFieldAnimation = true
+        switch (result) {
+        case MessageComposeResult.cancelled:
+            print("Message was cancelled")
+            self.dismiss(animated: true, completion: nil)
+            animateFieldsOpen()
+        case MessageComposeResult.failed:
+            print("Message failed")
+            self.dismiss(animated: true, completion: nil)
+            animateFieldsOpen()
+        case MessageComposeResult.sent:
+            print("Message was sent")
+            self.dismiss(animated: true, completion: nil)
+            firstNameTextField.text = ""
+            lastNameTextField.text = ""
+            phoneNumberTextField.text = ""
+            animateFieldsOpen()
+        }
+    }
+}
+
+
+
 
