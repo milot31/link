@@ -119,46 +119,6 @@ class NewContactViewController: UIViewController {
         }
     }
     
-    func animateFieldsShut() {
-        UIView.animate(withDuration: 0.2, animations: {
-            self.lastNameToFirstNameConstraint.constant = 10
-            self.phoneNumberToLastNameConstraint.constant = 10
-            self.doneButtonToPhoneNumberConstraint.constant = 20
-            self.view.layoutIfNeeded()
-        }) 
-    }
-    
-    func animateFieldsOpen() {
-        UIView.animate(withDuration: 0.2, animations: {
-            self.lastNameToFirstNameConstraint.constant = 20
-            self.phoneNumberToLastNameConstraint.constant = 54
-            self.doneButtonToPhoneNumberConstraint.constant = 100
-            self.view.layoutIfNeeded()
-        }) 
-    }
-
-    
-    func dismissKeyboard() {
-        openTextFieldAnimation = true
-        view.endEditing(true)
-    }
-    
-    func addDoneButtonOnNumpad(_ textField: UITextField) {
-        
-        let keypadToolbar: UIToolbar = UIToolbar()
-        
-        // add a done button to the numberpad
-        keypadToolbar.items=[
-            UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil),
-            UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: textField, action: #selector(UITextField.resignFirstResponder))
-            
-        ]
-        keypadToolbar.sizeToFit()
-        // add a toolbar with a done button above the number pad
-        textField.inputAccessoryView = keypadToolbar
-    }
-    
-    
     func requestForAccess(_ completionHandler: @escaping (_ accessGranted: Bool) -> Void) {
         let authorizationStatus = CNContactStore.authorizationStatus(for: CNEntityType.contacts)
         
@@ -200,6 +160,62 @@ class NewContactViewController: UIViewController {
         } catch {
             
         }
+    }
+}
+
+
+
+//MARK:- Core Data Save
+extension NewContactViewController {
+    func saveContact() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let manangedObject = appDelegate.persistentContainer.viewContext
+        
+        
+    }
+}
+
+
+
+//MARK:- Animations and keyboard methods
+extension NewContactViewController {
+    func animateFieldsShut() {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.lastNameToFirstNameConstraint.constant = 10
+            self.phoneNumberToLastNameConstraint.constant = 10
+            self.doneButtonToPhoneNumberConstraint.constant = 20
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func animateFieldsOpen() {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.lastNameToFirstNameConstraint.constant = 20
+            self.phoneNumberToLastNameConstraint.constant = 54
+            self.doneButtonToPhoneNumberConstraint.constant = 100
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    
+    func dismissKeyboard() {
+        openTextFieldAnimation = true
+        view.endEditing(true)
+    }
+    
+    func addDoneButtonOnNumpad(_ textField: UITextField) {
+        
+        let keypadToolbar: UIToolbar = UIToolbar()
+        
+        // add a done button to the numberpad
+        keypadToolbar.items=[
+            UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil),
+            UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: textField, action: #selector(UITextField.resignFirstResponder))
+            
+        ]
+        keypadToolbar.sizeToFit()
+        // add a toolbar with a done button above the number pad
+        textField.inputAccessoryView = keypadToolbar
     }
 }
 
