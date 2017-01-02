@@ -22,6 +22,21 @@ class ContactsViewController : UIViewController {
         contactsTableView.dataSource = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let manangedObject = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Contact")
+        
+        do {
+            let results = try manangedObject.fetch(fetchRequest)
+            addedContacts = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+    }
     
 }
 

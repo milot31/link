@@ -9,6 +9,8 @@
 import UIKit
 import Contacts
 import MessageUI
+import CoreData
+
 // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
 // Consider refactoring the code to use the non-optional operators.
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
@@ -167,11 +169,21 @@ class NewContactViewController: UIViewController {
 
 //MARK:- Core Data Save
 extension NewContactViewController {
-    func saveContact() {
+    func saveContact(withName name: String, number: String) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let manangedObject = appDelegate.persistentContainer.viewContext
         
+        let entity = NSEntityDescription.entity(forEntityName: "Contact", in: manangedObject)
+        let contact = NSManagedObject(entity: entity!, insertInto: manangedObject)
+        contact.setValue(name, forKey: "name")
+        contact.setValue(number, forKey: "phoneNumber")
+        contact.setValue(Date(), forKey: "date")
         
+        do {
+            try manangedObject.save()
+        } catch let error as NSError {
+            print("could not save due to \(error)")
+        }
     }
 }
 
