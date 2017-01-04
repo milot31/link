@@ -24,4 +24,23 @@ class ContactTableViewCell : UITableViewCell {
         locationLabel.text = ""
         dateLabel.text = ""
     }
+    
+    func setUpCell(_ contact: Contact) {
+        if let _name = contact.name {
+            nameLabel.text = _name
+        }
+        if let _date = contact.date {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "E MMMM d, yyyy"
+            locationLabel.text = dateFormatter.string(from: _date as Date)
+        }
+        if var fullNumber = contact.phoneNumber {
+//            var fullNumber = _number
+            fullNumber.insert("(", at: fullNumber.index(fullNumber.startIndex, offsetBy: 0))
+            fullNumber.insert(")", at: fullNumber.index(fullNumber.startIndex, offsetBy: 4))
+            fullNumber.insert(" ", at: fullNumber.index(fullNumber.startIndex, offsetBy: 5))
+            fullNumber.insert("-", at: fullNumber.index(fullNumber.startIndex, offsetBy: 9))
+            dateLabel.text = fullNumber
+        }
+    }
 }

@@ -53,7 +53,11 @@ extension ContactsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
-//        cell.label = addedContacts.valueForKey("name") as? String
+        let cont = addedContacts[indexPath.row] as! Contact
+        
+        cell.setUpCell(cont)
+        
+        return cell
     }
 }
 
