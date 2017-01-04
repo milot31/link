@@ -9,6 +9,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="CaviarDreams.ttf">
+            <string>CaviarDreams</string>
+        </array>
+        <array key="CaviarDreams_Bold.ttf">
+            <string>CaviarDreams-Bold</string>
+        </array>
+        <array key="CaviarDreams_BoldItalic.ttf">
+            <string>CaviarDreams-BoldItalic</string>
+        </array>
         <array key="Lighthouse_PersonalUse.ttf">
             <string>LighthousePersonalUse</string>
         </array>
@@ -143,7 +152,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pEm-ny-7We">
                                 <rect key="frame" x="0.0" y="20" width="319" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.5954886774" green="0.85299115000000003" blue="1" alpha="0.384264147" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" rowHeight="62" id="6WL-X6-1q6" customClass="ContactTableViewCell" customModule="Link" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="319" height="62"/>
@@ -151,7 +160,36 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6WL-X6-1q6" id="Kjt-cP-qbl">
                                             <rect key="frame" x="0.0" y="0.0" width="319" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-mG-lEO">
+                                                    <rect key="frame" x="8" y="8" width="303" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="CaviarDreams-BoldItalic" family="Caviar Dreams" pointSize="18"/>
+                                                    <color key="textColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTc-HT-91X">
+                                                    <rect key="frame" x="8" y="32" width="303" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="14"/>
+                                                    <color key="textColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uy3-D7-Eqd">
+                                                    <rect key="frame" x="8" y="46" width="303" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="11"/>
+                                                    <color key="textColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Uy3-D7-Eqd" id="bgw-w3-1pk"/>
+                                            <outlet property="locationLabel" destination="CTc-HT-91X" id="lP6-XJ-Nu1"/>
+                                            <outlet property="nameLabel" destination="dgs-mG-lEO" id="Ycd-Kl-hgX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

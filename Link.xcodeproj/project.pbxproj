@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		03BA1EE5B6E832562EA97C29 /* Pods_Link.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317D0B1C0F9526BB71E01A9A /* Pods_Link.framework */; };
+		3B2422DC1E1CA4A2009BEAF6 /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B2422D81E1CA4A2009BEAF6 /* CaviarDreams_BoldItalic.ttf */; };
+		3B2422DD1E1CA4A2009BEAF6 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B2422D91E1CA4A2009BEAF6 /* CaviarDreams_Bold.ttf */; };
+		3B2422DE1E1CA4A2009BEAF6 /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B2422DA1E1CA4A2009BEAF6 /* CaviarDreams_Italic.ttf */; };
+		3B2422DF1E1CA4A2009BEAF6 /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B2422DB1E1CA4A2009BEAF6 /* CaviarDreams.ttf */; };
+		3B2422E11E1CA5DC009BEAF6 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2422E01E1CA5DC009BEAF6 /* Contact.swift */; };
 		3B48925A1D751BED00F8DC22 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4892591D751BED00F8DC22 /* ContactsViewController.swift */; };
 		3B60FC831D67E42200A12EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60FC821D67E42200A12EBC /* AppDelegate.swift */; };
 		3B60FC851D67E42200A12EBC /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60FC841D67E42200A12EBC /* NewContactViewController.swift */; };
@@ -42,6 +47,11 @@
 		0C49328FA17BA1C3F481D659 /* Pods-Link.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Link.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Link/Pods-Link.debug.xcconfig"; sourceTree = "<group>"; };
 		317D0B1C0F9526BB71E01A9A /* Pods_Link.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Link.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0C64D31E0B7D67000927E2 /* Link-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Link-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B2422D81E1CA4A2009BEAF6 /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams_BoldItalic.ttf; path = ../../../../Downloads/caviar_dreams/CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
+		3B2422D91E1CA4A2009BEAF6 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams_Bold.ttf; path = ../../../../Downloads/caviar_dreams/CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
+		3B2422DA1E1CA4A2009BEAF6 /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams_Italic.ttf; path = ../../../../Downloads/caviar_dreams/CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
+		3B2422DB1E1CA4A2009BEAF6 /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams.ttf; path = ../../../../Downloads/caviar_dreams/CaviarDreams.ttf; sourceTree = "<group>"; };
+		3B2422E01E1CA5DC009BEAF6 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		3B4892591D751BED00F8DC22 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		3B60FC7F1D67E42200A12EBC /* Link.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Link.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B60FC821D67E42200A12EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +185,10 @@
 				3B60FC891D67E42200A12EBC /* Assets.xcassets */,
 				3B0C64D31E0B7D67000927E2 /* Link-Bridging-Header.h */,
 				3B6B61CF1D67E70500BFD584 /* Lighthouse_PersonalUse.ttf */,
+				3B2422D81E1CA4A2009BEAF6 /* CaviarDreams_BoldItalic.ttf */,
+				3B2422D91E1CA4A2009BEAF6 /* CaviarDreams_Bold.ttf */,
+				3B2422DA1E1CA4A2009BEAF6 /* CaviarDreams_Italic.ttf */,
+				3B2422DB1E1CA4A2009BEAF6 /* CaviarDreams.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -183,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				3B914F4E1E0EDC6400C70B3C /* LinkDataModel.xcdatamodeld */,
+				3B2422E01E1CA5DC009BEAF6 /* Contact.swift */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -309,6 +324,10 @@
 				3B60FC8D1D67E42200A12EBC /* LaunchScreen.storyboard in Resources */,
 				3B60FC8A1D67E42200A12EBC /* Assets.xcassets in Resources */,
 				3B6B61D01D67E70500BFD584 /* Lighthouse_PersonalUse.ttf in Resources */,
+				3B2422DD1E1CA4A2009BEAF6 /* CaviarDreams_Bold.ttf in Resources */,
+				3B2422DE1E1CA4A2009BEAF6 /* CaviarDreams_Italic.ttf in Resources */,
+				3B2422DC1E1CA4A2009BEAF6 /* CaviarDreams_BoldItalic.ttf in Resources */,
+				3B2422DF1E1CA4A2009BEAF6 /* CaviarDreams.ttf in Resources */,
 				3B60FC881D67E42200A12EBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2422E11E1CA5DC009BEAF6 /* Contact.swift in Sources */,
 				3B60FC851D67E42200A12EBC /* NewContactViewController.swift in Sources */,
 				3B914F531E0EDE8300C70B3C /* ContactTableViewCell.swift in Sources */,
 				3B48925A1D751BED00F8DC22 /* ContactsViewController.swift in Sources */,
