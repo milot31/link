@@ -38,5 +38,7 @@
 	</array>
 	<key>NSContactsUsageDescription</key>
 	<string>Used to add contacts to address book.</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
