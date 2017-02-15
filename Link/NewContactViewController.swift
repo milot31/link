@@ -286,11 +286,11 @@ extension NewContactViewController: MFMessageComposeViewControllerDelegate {
         case MessageComposeResult.sent:
             print("Message was sent")
             self.dismiss(animated: true, completion: nil)
-            firstNameTextField.text = ""
-            lastNameTextField.text = ""
-            phoneNumberTextField.text = ""
             animateFieldsOpen()
         }
+        firstNameTextField.text = ""
+        lastNameTextField.text = ""
+        phoneNumberTextField.text = ""
     }
 }
 
