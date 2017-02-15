@@ -33,6 +33,7 @@ class ContactsViewController : UIViewController {
         do {
             let results = try manangedObject.fetch(fetchRequest)
             addedContacts = results as! [NSManagedObject]
+            contactsTableView.reloadData()
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }
@@ -64,5 +65,7 @@ extension ContactsViewController: UITableViewDataSource {
 
 
 extension ContactsViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 73
+    }
 }

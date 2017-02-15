@@ -31,16 +31,22 @@ class ContactTableViewCell : UITableViewCell {
         }
         if let _date = contact.date {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "E MMMM d, yyyy"
-            locationLabel.text = dateFormatter.string(from: _date as Date)
+            dateFormatter.dateFormat = "E MMMM d, yyyy '@' h:mm a"
+            dateLabel.text = dateFormatter.string(from: _date as Date)
         }
         if var fullNumber = contact.phoneNumber {
-//            var fullNumber = _number
-            fullNumber.insert("(", at: fullNumber.index(fullNumber.startIndex, offsetBy: 0))
-            fullNumber.insert(")", at: fullNumber.index(fullNumber.startIndex, offsetBy: 4))
-            fullNumber.insert(" ", at: fullNumber.index(fullNumber.startIndex, offsetBy: 5))
-            fullNumber.insert("-", at: fullNumber.index(fullNumber.startIndex, offsetBy: 9))
-            dateLabel.text = fullNumber
+            if fullNumber.characters.count == 10 {
+                fullNumber.insert("(", at: fullNumber.index(fullNumber.startIndex, offsetBy: 0))
+                fullNumber.insert(")", at: fullNumber.index(fullNumber.startIndex, offsetBy: 4))
+                fullNumber.insert(" ", at: fullNumber.index(fullNumber.startIndex, offsetBy: 5))
+                fullNumber.insert("-", at: fullNumber.index(fullNumber.startIndex, offsetBy: 9))
+                locationLabel.text = fullNumber
+            } else if fullNumber.characters.count == 7 {
+                fullNumber.insert("-", at: fullNumber.index(fullNumber.startIndex, offsetBy: 3))
+                locationLabel.text = fullNumber
+            } else {
+                locationLabel.text = fullNumber
+            }
         }
     }
 }

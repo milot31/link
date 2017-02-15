@@ -66,7 +66,7 @@ class NewContactViewController: UIViewController {
             navigationItem.rightBarButtonItem?.target = self.revealViewController()
             navigationItem.rightBarButtonItem?.action = "rightRevealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            self.revealViewController().rearViewRevealOverdraw = 0
+            self.revealViewController().rightViewRevealOverdraw = 0
         }
         
         firstNameTextField.delegate = self
@@ -104,6 +104,10 @@ class NewContactViewController: UIViewController {
         tlabel.adjustsFontSizeToFitWidth = true
         tlabel.textAlignment = .center
         self.navigationItem.titleView = tlabel;
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
     @IBAction func doneButtonTapped(_ sender: AnyObject) {
@@ -160,8 +164,9 @@ class NewContactViewController: UIViewController {
             saveRequest.add(newContact, toContainerWithIdentifier: nil)
             try contactStore.execute(saveRequest)
         } catch {
-            
+          
         }
+        saveContact(withName: firstNameTextField.text! + " " + lastNameTextField.text!, number: phoneNumberTextField.text!)
     }
 }
 
@@ -170,7 +175,9 @@ class NewContactViewController: UIViewController {
 //MARK:- Core Data Save
 extension NewContactViewController {
     func saveContact(withName name: String, number: String) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
         let manangedObject = appDelegate.persistentContainer.viewContext
         
         let entity = NSEntityDescription.entity(forEntityName: "Contact", in: manangedObject)
