@@ -5,5 +5,8 @@ use_frameworks!
 target 'Link' do
   
   pod 'SWRevealViewController', '~> 2.3'
-
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
+  
 end

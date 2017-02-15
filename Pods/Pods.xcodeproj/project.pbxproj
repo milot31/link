@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181FEB9E1B59339581C0F6811A1480BD /* SWRevealViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C926A7FF96BB78067CD69FEACED8667 /* SWRevealViewController-dummy.m */; };
+		181FEB9E1B59339581C0F6811A1480BD /* SWRevealViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C14ACDEAA3394821EF6804763176BA07 /* SWRevealViewController-dummy.m */; };
 		2BAB4AC2F94A35D0AB7090353DC5A1D7 /* Pods-Link-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96414320234ECD5799AF3203B5C67B9D /* Pods-Link-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41A8DE3E0DB4F37C992397B430E61AD1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ABE771270A802B17AA91E0BFC1A15 /* SWRevealViewController.m */; };
-		48D8582072B64BDD1B3A709E777E1B04 /* SWRevealViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CDBEAF066B98CA67C410DAEC88BD35 /* SWRevealViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41A8DE3E0DB4F37C992397B430E61AD1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA00381FE38142D60576EA9C9248AC6 /* SWRevealViewController.m */; };
+		48D8582072B64BDD1B3A709E777E1B04 /* SWRevealViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 176014B7C68D27C6DD8CBA8FE86DBE81 /* SWRevealViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5210F1D0851CDFE04178268075E70B58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C4A76B6AFC1ABC19A242A503DEE13E /* CoreGraphics.framework */; };
 		525AA4A8D422B97E2E68B84B3AFE811A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC1F1998668C3B38A2D60F70AC442F9 /* Foundation.framework */; };
-		6EF1D7C7025E0118B2572BA21ED6D822 /* SWRevealViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A95697A69A4DB86E4C7BF35BC485CEC4 /* SWRevealViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EF1D7C7025E0118B2572BA21ED6D822 /* SWRevealViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 18964B638AD41F48E3A8E2A8B517F967 /* SWRevealViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		752D5D1D12D22FC2E053120CCD3AD8FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC1F1998668C3B38A2D60F70AC442F9 /* Foundation.framework */; };
 		B5BB554C192436E154174013D8057FF6 /* Pods-Link-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC799093DC4443C350EA5FDDF980345 /* Pods-Link-dummy.m */; };
 /* End PBXBuildFile section */
@@ -30,27 +30,35 @@
 
 /* Begin PBXFileReference section */
 		0CC1F1998668C3B38A2D60F70AC442F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		176014B7C68D27C6DD8CBA8FE86DBE81 /* SWRevealViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-umbrella.h"; sourceTree = "<group>"; };
+		18964B638AD41F48E3A8E2A8B517F967 /* SWRevealViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		1AC799093DC4443C350EA5FDDF980345 /* Pods-Link-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Link-dummy.m"; sourceTree = "<group>"; };
+		2952AB3DE815499E58CF2295466BF1A4 /* SWRevealViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWRevealViewController.modulemap; sourceTree = "<group>"; };
+		331A78099AB03746AAFA22CEA40A1A58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C7C3206C93C48C2324EED90CFECF860 /* Pods_Link.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Link.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EAE3F67A191BF69699DEA983D05E778 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		411E176DB7CAA2191C6A0AA2EB28B131 /* Pods-Link.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Link.modulemap"; sourceTree = "<group>"; };
-		49CDBEAF066B98CA67C410DAEC88BD35 /* SWRevealViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-umbrella.h"; sourceTree = "<group>"; };
-		4C926A7FF96BB78067CD69FEACED8667 /* SWRevealViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWRevealViewController-dummy.m"; sourceTree = "<group>"; };
-		684213E519441074FE8338FBF49E75E9 /* SWRevealViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWRevealViewController.xcconfig; sourceTree = "<group>"; };
+		6776615842C64982D33317F2F3AF9214 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		680ABD7E2268B0FFDAE87B416075D0B9 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		6E2E19FB45741B3BC66304DB2F77745A /* SWRevealViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWRevealViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7F15E745C002555B3D105E29A94ABB /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
 		730C1CF672ECE7D8A166C718D01AE7CF /* Pods-Link-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Link-resources.sh"; sourceTree = "<group>"; };
-		744ABE771270A802B17AA91E0BFC1A15 /* SWRevealViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		85113FAAC20877566E2D6C424CCC2CAC /* Pods-Link-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Link-acknowledgements.markdown"; sourceTree = "<group>"; };
+		851E8B530BAE8BAF527826DE3CD73475 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		8C43701351EF534AC3FAFB9AF79F9799 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96414320234ECD5799AF3203B5C67B9D /* Pods-Link-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Link-umbrella.h"; sourceTree = "<group>"; };
+		99942C3A5C31DE4CAF8B62CD5D343801 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		9EA00381FE38142D60576EA9C9248AC6 /* SWRevealViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		A1252D861E0976BF8EDA3550C277580E /* Pods-Link.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Link.release.xcconfig"; sourceTree = "<group>"; };
-		A27F618049BA9267BD7F4DE144D005E2 /* SWRevealViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWRevealViewController.modulemap; sourceTree = "<group>"; };
-		A95697A69A4DB86E4C7BF35BC485CEC4 /* SWRevealViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		A564740BF1E4C7BF7F6A5243EAA209DB /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
 		AC58F65E4DA497AF3D8B4D2C940831AC /* Pods-Link-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Link-acknowledgements.plist"; sourceTree = "<group>"; };
 		B2C4A76B6AFC1ABC19A242A503DEE13E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		BDEE451C9029B9170C9488A472B2F5A5 /* SWRevealViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-prefix.pch"; sourceTree = "<group>"; };
+		B79EDDC90173D7BC0E3D7A1AEDB00C8C /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		BCA331CF705431FF8519923643D772B8 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		C14ACDEAA3394821EF6804763176BA07 /* SWRevealViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWRevealViewController-dummy.m"; sourceTree = "<group>"; };
 		C37C31404A893BE3C097A3E3578DA83B /* Pods-Link-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Link-frameworks.sh"; sourceTree = "<group>"; };
+		E4E9439A23F7B81412F11F7FB2C176B0 /* SWRevealViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWRevealViewController.xcconfig; sourceTree = "<group>"; };
+		E6CF59870E2814D02FD0496FD2CC6370 /* SWRevealViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-prefix.pch"; sourceTree = "<group>"; };
 		F54BABE98ED4D37B602255A3E991DA99 /* Pods-Link.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Link.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,14 +92,46 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		2A13413360E4B4F80D82A8FD3341A361 /* SWRevealViewController */ = {
+		1943E1805083F797023E81CC653D4FB8 /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				A95697A69A4DB86E4C7BF35BC485CEC4 /* SWRevealViewController.h */,
-				744ABE771270A802B17AA91E0BFC1A15 /* SWRevealViewController.m */,
-				46F8018B70DD7A4DF0CC3B567B149909 /* Support Files */,
+				99EEED1524502E5BD0EA35C6BFA544AD /* Base */,
+				BC765A03145BC6C111382D212DC8850E /* Maps */,
 			);
-			path = SWRevealViewController;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		1D3F0614280970E869BF1F4DF34E817A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				680ABD7E2268B0FFDAE87B416075D0B9 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2E9A48D0A189C3356C936A2C3DB42C62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A564740BF1E4C7BF7F6A5243EAA209DB /* GooglePlacePicker.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		32B15468B2FB9DF1A56C477F4C418B27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E7F15E745C002555B3D105E29A94ABB /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E62C0EE347397E1D5CED03A7FBC8B80 /* GooglePlacePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C4753F9D3BCF22C9711BC59E649A69D4 /* Frameworks */,
+				2E9A48D0A189C3356C936A2C3DB42C62 /* Resources */,
+			);
+			path = GooglePlacePicker;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -120,18 +160,33 @@
 			path = "Target Support Files/Pods-Link";
 			sourceTree = "<group>";
 		};
-		46F8018B70DD7A4DF0CC3B567B149909 /* Support Files */ = {
+		592549403F321E60058E745D66531BC6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3EAE3F67A191BF69699DEA983D05E778 /* Info.plist */,
-				A27F618049BA9267BD7F4DE144D005E2 /* SWRevealViewController.modulemap */,
-				684213E519441074FE8338FBF49E75E9 /* SWRevealViewController.xcconfig */,
-				4C926A7FF96BB78067CD69FEACED8667 /* SWRevealViewController-dummy.m */,
-				BDEE451C9029B9170C9488A472B2F5A5 /* SWRevealViewController-prefix.pch */,
-				49CDBEAF066B98CA67C410DAEC88BD35 /* SWRevealViewController-umbrella.h */,
+				6776615842C64982D33317F2F3AF9214 /* GooglePlaces.bundle */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SWRevealViewController";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6E57170E4D8190A493489B7A5858BFF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1943E1805083F797023E81CC653D4FB8 /* GoogleMaps */,
+				3E62C0EE347397E1D5CED03A7FBC8B80 /* GooglePlacePicker */,
+				B81288A819A35448F07FA9C765DDC307 /* GooglePlaces */,
+				7324852567556BF4E7EEFF0966875294 /* SWRevealViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7324852567556BF4E7EEFF0966875294 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18964B638AD41F48E3A8E2A8B517F967 /* SWRevealViewController.h */,
+				9EA00381FE38142D60576EA9C9248AC6 /* SWRevealViewController.m */,
+				AF541CDEE3DB908C1E1DAFD18294EE67 /* Support Files */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -139,10 +194,66 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				EF919DCAD7230EFA1F7FA3DC5EA3DDED /* Pods */,
+				6E57170E4D8190A493489B7A5858BFF2 /* Pods */,
 				D22A64453D7B536481E437DC7178E709 /* Products */,
 				C501AB4671BF4082F6885DF83D4C2B8F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		99EEED1524502E5BD0EA35C6BFA544AD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A02AE4BEE40E14B97A2AFB647CF4831B /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		A02AE4BEE40E14B97A2AFB647CF4831B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				851E8B530BAE8BAF527826DE3CD73475 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF541CDEE3DB908C1E1DAFD18294EE67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				331A78099AB03746AAFA22CEA40A1A58 /* Info.plist */,
+				2952AB3DE815499E58CF2295466BF1A4 /* SWRevealViewController.modulemap */,
+				E4E9439A23F7B81412F11F7FB2C176B0 /* SWRevealViewController.xcconfig */,
+				C14ACDEAA3394821EF6804763176BA07 /* SWRevealViewController-dummy.m */,
+				E6CF59870E2814D02FD0496FD2CC6370 /* SWRevealViewController-prefix.pch */,
+				176014B7C68D27C6DD8CBA8FE86DBE81 /* SWRevealViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWRevealViewController";
+			sourceTree = "<group>";
+		};
+		B81288A819A35448F07FA9C765DDC307 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				32B15468B2FB9DF1A56C477F4C418B27 /* Frameworks */,
+				592549403F321E60058E745D66531BC6 /* Resources */,
+			);
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		BC765A03145BC6C111382D212DC8850E /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F2C72D2A0131400C5FCB5F7A9F120 /* Frameworks */,
+				1D3F0614280970E869BF1F4DF34E817A /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		C4753F9D3BCF22C9711BC59E649A69D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B79EDDC90173D7BC0E3D7A1AEDB00C8C /* GooglePlacePicker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C501AB4671BF4082F6885DF83D4C2B8F /* Targets Support Files */ = {
@@ -162,12 +273,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF919DCAD7230EFA1F7FA3DC5EA3DDED /* Pods */ = {
+		DD2F2C72D2A0131400C5FCB5F7A9F120 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A13413360E4B4F80D82A8FD3341A361 /* SWRevealViewController */,
+				99942C3A5C31DE4CAF8B62CD5D343801 /* GoogleMaps.framework */,
+				BCA331CF705431FF8519923643D772B8 /* GoogleMapsCore.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,73 +397,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		345691A1C08671C1C8D52CB90D0FB836 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F54BABE98ED4D37B602255A3E991DA99 /* Pods-Link.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Link/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Link/Pods-Link.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Link;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3AD993D6D91983CF8DA18729A41EE9E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1252D861E0976BF8EDA3550C277580E /* Pods-Link.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Link/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Link/Pods-Link.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Link;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -382,14 +428,76 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+		7C802DE2AA64B510DA892ED493CC0C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E9439A23F7B81412F11F7FB2C176B0 /* SWRevealViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWRevealViewController/SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWRevealViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWRevealViewController/SWRevealViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SWRevealViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C09F4608B338040267506D6E014118E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1252D861E0976BF8EDA3550C277580E /* Pods-Link.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Link/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Link/Pods-Link.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Link;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -424,45 +532,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		7C802DE2AA64B510DA892ED493CC0C82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 684213E519441074FE8338FBF49E75E9 /* SWRevealViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SWRevealViewController/SWRevealViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SWRevealViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SWRevealViewController/SWRevealViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SWRevealViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		C78B82B018AD34FD0434450B3BA0111F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 684213E519441074FE8338FBF49E75E9 /* SWRevealViewController.xcconfig */;
+			baseConfigurationReference = E4E9439A23F7B81412F11F7FB2C176B0 /* SWRevealViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -489,14 +568,47 @@
 			};
 			name = Release;
 		};
+		CDEC28AF71D98A962C17340A58CBBE19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54BABE98ED4D37B602255A3E991DA99 /* Pods-Link.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Link/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Link/Pods-Link.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Link;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		12320A97415C5B5E7F30D6A0128715DF /* Build configuration list for PBXNativeTarget "Pods-Link" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				345691A1C08671C1C8D52CB90D0FB836 /* Debug */,
-				3AD993D6D91983CF8DA18729A41EE9E4 /* Release */,
+				CDEC28AF71D98A962C17340A58CBBE19 /* Debug */,
+				8C09F4608B338040267506D6E014118E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -504,8 +616,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
-				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
