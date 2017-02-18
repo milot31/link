@@ -80,6 +80,40 @@ class NewContactViewController: UIViewController {
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(NewContactViewController.dismissKeyboard))
         backgroundView.addGestureRecognizer(tap)
+        
+        
+        firstNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
+        firstNameTextField.attributedPlaceholder = NSAttributedString(string:"first name", attributes:[NSForegroundColorAttributeName: UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.00)])
+        firstNameTextField.textColor = UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.00)
+        firstNameTextField.backgroundColor = UIColor(red:0.15, green:0.15, blue:0.15, alpha:1.00)
+        firstNameTextField.autocapitalizationType = .words
+        firstNameTextField.layer.cornerRadius = 8
+        firstNameTextField.layer.borderColor = UIColor.white.cgColor
+        firstNameTextField.layer.borderWidth = 1
+        firstNameTextField.tintColor = UIColor.white
+        
+        lastNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
+        lastNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
+        lastNameTextField.attributedPlaceholder = NSAttributedString(string:"last name", attributes:[NSForegroundColorAttributeName: UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.00)])
+        lastNameTextField.textColor = UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.00)
+        lastNameTextField.backgroundColor = UIColor(red:0.15, green:0.15, blue:0.15, alpha:1.00)
+        lastNameTextField.autocapitalizationType = .words
+        lastNameTextField.layer.cornerRadius = 8
+        lastNameTextField.layer.borderColor = UIColor.white.cgColor
+        lastNameTextField.layer.borderWidth = 1
+        lastNameTextField.tintColor = UIColor.white
+        
+        phoneNumberTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
+        phoneNumberTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
+        phoneNumberTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
+        phoneNumberTextField.attributedPlaceholder = NSAttributedString(string:"phone number", attributes:[NSForegroundColorAttributeName: UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.00)])
+        phoneNumberTextField.textColor = UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.00)
+        phoneNumberTextField.backgroundColor = UIColor(red:0.15, green:0.15, blue:0.15, alpha:1.00)
+        phoneNumberTextField.autocapitalizationType = .words
+        phoneNumberTextField.layer.cornerRadius = 8
+        phoneNumberTextField.layer.borderColor = UIColor.white.cgColor
+        phoneNumberTextField.layer.borderWidth = 1
+        phoneNumberTextField.tintColor = UIColor.white
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -89,16 +123,15 @@ class NewContactViewController: UIViewController {
     }
     
     func navBarSetup() {
-        navigationController?.navigationBar.barTintColor = UIColor(red:0.35, green:0.53, blue:0.78, alpha:1.00)
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:0.84, green:0.95, blue:1.00, alpha:1.00)
-    ]
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
         navigationItem.title = "Link"
-        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.isTranslucent = true
         
         self.title = "Link"
         let tlabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
         tlabel.text=self.navigationItem.title;
-        tlabel.textColor = UIColor(red:0.84, green:0.95, blue:1.00, alpha:1.00)
+        tlabel.textColor = UIColor.black
         tlabel.font = UIFont(name: "Lighthouse Personal Use", size: 44)
         tlabel.backgroundColor = UIColor.clear
         tlabel.adjustsFontSizeToFitWidth = true
@@ -210,8 +243,8 @@ extension NewContactViewController {
     func animateFieldsOpen() {
         UIView.animate(withDuration: 0.2, animations: {
             self.lastNameToFirstNameConstraint.constant = 20
-            self.phoneNumberToLastNameConstraint.constant = 54
-            self.doneButtonToPhoneNumberConstraint.constant = 100
+            self.phoneNumberToLastNameConstraint.constant = 40
+            self.doneButtonToPhoneNumberConstraint.constant = 70
             self.view.layoutIfNeeded()
         })
     }

@@ -19,9 +19,6 @@
         <array key="CaviarDreams_BoldItalic.ttf">
             <string>CaviarDreams-BoldItalic</string>
         </array>
-        <array key="Lighthouse_PersonalUse.ttf">
-            <string>LighthousePersonalUse</string>
-        </array>
     </customFonts>
     <scenes>
         <!--New Contact View Controller-->
@@ -33,105 +30,97 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gfl-hF-aik">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5954886774" green="0.85299115000000003" blue="1" alpha="0.384264147" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdS-uY-3TX">
-                                <rect key="frame" x="68" y="55" width="239" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdS-uY-3TX">
+                                <rect key="frame" x="20" y="119" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8KR-Du-DTB"/>
-                                    <constraint firstAttribute="width" constant="239" id="Hde-jD-joj"/>
+                                    <constraint firstAttribute="height" constant="50" id="8KR-Du-DTB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2b-en-Bkz">
-                                <rect key="frame" x="68" y="20" width="103" height="35"/>
+                                <rect key="frame" x="112.5" y="84" width="150" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="103" id="gTz-bv-bMw"/>
+                                    <constraint firstAttribute="width" constant="150" id="gTz-bv-bMw"/>
                                     <constraint firstAttribute="height" constant="35" id="zhn-X0-3X2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="LighthousePersonalUse" family="Lighthouse Personal Use" pointSize="23"/>
-                                <color key="textColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-3i-NrD">
-                                <rect key="frame" x="68" y="105" width="239" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-3i-NrD">
+                                <rect key="frame" x="20" y="189" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="OET-Qs-A0L"/>
-                                    <constraint firstAttribute="width" constant="239" id="uGD-yC-KxV"/>
+                                    <constraint firstAttribute="height" constant="50" id="OET-Qs-A0L"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digits" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-vs-ciH">
-                                <rect key="frame" x="68" y="223" width="239" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digits" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-vs-ciH">
+                                <rect key="frame" x="20" y="279" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="239" id="Aj3-Fh-UGx"/>
+                                    <constraint firstAttribute="height" constant="50" id="bjO-pb-MAN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-fV-29S">
-                                <rect key="frame" x="68" y="189" width="129" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="JGt-Gb-R0k"/>
-                                    <constraint firstAttribute="width" constant="129" id="LNo-Uv-eMr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="LighthousePersonalUse" family="Lighthouse Personal Use" pointSize="23"/>
-                                <color key="textColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCe-AN-fJY">
-                                <rect key="frame" x="150" y="353" width="76" height="76"/>
+                                <rect key="frame" x="150" y="399" width="76" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="76" id="7Ey-a7-pnd"/>
                                     <constraint firstAttribute="height" constant="76" id="JeM-K4-T2T"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="81"/>
                                 <state key="normal" title="✓">
-                                    <color key="titleColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.65911063762626265" blue="0.00020176944871642645" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGb-MG-bmW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RdA-vs-ciH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0oA-a6-O61"/>
+                            <constraint firstItem="QCe-AN-fJY" firstAttribute="top" secondItem="RdA-vs-ciH" secondAttribute="bottom" constant="70" id="1Xx-aw-x3B"/>
                             <constraint firstItem="bdS-uY-3TX" firstAttribute="top" secondItem="c2b-en-Bkz" secondAttribute="bottom" id="1fj-bI-PHW"/>
                             <constraint firstItem="nx3-3i-NrD" firstAttribute="top" secondItem="bdS-uY-3TX" secondAttribute="bottom" constant="20" id="4xY-5c-tFt"/>
-                            <constraint firstItem="RdA-vs-ciH" firstAttribute="top" secondItem="bK7-fV-29S" secondAttribute="bottom" constant="-1" id="Gpv-vj-1Ng"/>
-                            <constraint firstItem="bK7-fV-29S" firstAttribute="top" secondItem="nx3-3i-NrD" secondAttribute="bottom" constant="54" id="LZW-8t-Ub0"/>
+                            <constraint firstAttribute="trailing" secondItem="RdA-vs-ciH" secondAttribute="trailing" constant="20" id="A98-w7-KBw"/>
+                            <constraint firstAttribute="trailing" secondItem="nx3-3i-NrD" secondAttribute="trailing" constant="20" id="Gfm-ap-IAS"/>
+                            <constraint firstItem="c2b-en-Bkz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KXe-eC-mFB"/>
+                            <constraint firstItem="RdA-vs-ciH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Muz-Bv-1Cg"/>
                             <constraint firstItem="QCe-AN-fJY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WAx-1v-IYq"/>
+                            <constraint firstItem="bdS-uY-3TX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ZbS-rZ-Brq"/>
                             <constraint firstItem="c2b-en-Bkz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="dbY-4d-Dc0"/>
-                            <constraint firstItem="QCe-AN-fJY" firstAttribute="top" secondItem="RdA-vs-ciH" secondAttribute="bottom" constant="100" id="gZs-zH-tI3"/>
-                            <constraint firstItem="bK7-fV-29S" firstAttribute="leading" secondItem="RdA-vs-ciH" secondAttribute="leading" id="gcb-wo-LBd"/>
-                            <constraint firstItem="c2b-en-Bkz" firstAttribute="leading" secondItem="bdS-uY-3TX" secondAttribute="leading" id="h5k-T3-And"/>
+                            <constraint firstAttribute="trailing" secondItem="bdS-uY-3TX" secondAttribute="trailing" constant="20" id="fzw-tg-9lc"/>
                             <constraint firstItem="bdS-uY-3TX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tss-s2-WOm"/>
+                            <constraint firstItem="RdA-vs-ciH" firstAttribute="top" secondItem="nx3-3i-NrD" secondAttribute="bottom" constant="40" id="uia-y4-pcw"/>
                             <constraint firstItem="nx3-3i-NrD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vxz-Np-k9V"/>
+                            <constraint firstItem="nx3-3i-NrD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="z8b-bd-H1V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IFC-7F-bC5">
                         <barButtonItem key="rightBarButtonItem" image="users" id="rR7-jT-AC7">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="backgroundView" destination="gfl-hF-aik" id="WyW-6Y-a1Y"/>
                         <outlet property="doneButton" destination="QCe-AN-fJY" id="kEi-ar-Ast"/>
-                        <outlet property="doneButtonToPhoneNumberConstraint" destination="gZs-zH-tI3" id="1Tv-fJ-z0N"/>
+                        <outlet property="doneButtonToPhoneNumberConstraint" destination="1Xx-aw-x3B" id="k7K-EY-qvn"/>
                         <outlet property="firstNameTextField" destination="bdS-uY-3TX" id="TKS-69-yH3"/>
                         <outlet property="lastNameTextField" destination="nx3-3i-NrD" id="6gZ-Qk-AZ4"/>
                         <outlet property="lastNameToFirstNameConstraint" destination="4xY-5c-tFt" id="uQY-CV-1EF"/>
                         <outlet property="phoneNumberTextField" destination="RdA-vs-ciH" id="Q1h-cj-4Oc"/>
-                        <outlet property="phoneNumberToLastNameConstraint" destination="LZW-8t-Ub0" id="oOl-bi-4p9"/>
+                        <outlet property="phoneNumberToLastNameConstraint" destination="uia-y4-pcw" id="Dzr-XL-ODO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -152,10 +141,10 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brX-CP-mOe">
                                 <rect key="frame" x="0.0" y="0.0" width="260" height="667"/>
-                                <color key="backgroundColor" red="0.5954886774" green="0.85299115000000003" blue="1" alpha="0.384264147" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.088600852272727293" green="0.088600852272727293" blue="0.088600852272727293" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pEm-ny-7We">
-                                <rect key="frame" x="0.0" y="20" width="260" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pEm-ny-7We">
+                                <rect key="frame" x="0.0" y="40" width="260" height="627"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" rowHeight="73" id="6WL-X6-1q6" customClass="ContactTableViewCell" customModule="Link" customModuleProvider="target">
@@ -171,7 +160,7 @@
                                                         <constraint firstAttribute="height" constant="24" id="lQr-ef-rno"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="CaviarDreams-BoldItalic" family="Caviar Dreams" pointSize="20"/>
-                                                    <color key="textColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="CTc-HT-91X">
@@ -180,7 +169,7 @@
                                                         <constraint firstAttribute="height" constant="15" id="TvC-ba-ARB"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="14"/>
-                                                    <color key="textColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uy3-D7-Eqd">
@@ -189,7 +178,7 @@
                                                         <constraint firstAttribute="height" constant="15" id="Ygq-oy-WOI"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="11"/>
-                                                    <color key="textColor" red="0.27262591489999999" green="0.43298510229999998" blue="0.74745501889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -215,9 +204,9 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pEm-ny-7We" firstAttribute="top" secondItem="YpA-AT-PYx" secondAttribute="bottom" id="6Or-ig-Qhe"/>
+                            <constraint firstItem="pEm-ny-7We" firstAttribute="top" secondItem="YpA-AT-PYx" secondAttribute="bottom" constant="20" id="6Or-ig-Qhe"/>
                             <constraint firstItem="8rs-im-Y81" firstAttribute="top" secondItem="pEm-ny-7We" secondAttribute="bottom" id="8Te-Af-fpp"/>
                             <constraint firstItem="brX-CP-mOe" firstAttribute="top" secondItem="YpA-AT-PYx" secondAttribute="bottom" constant="-20" id="Mx1-Hw-oHs"/>
                             <constraint firstAttribute="trailing" secondItem="pEm-ny-7We" secondAttribute="trailing" id="NXM-Ni-ZhI"/>
@@ -268,7 +257,7 @@
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="M6C-2c-fBn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="M6C-2c-fBn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

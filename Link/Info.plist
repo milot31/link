@@ -40,5 +40,9 @@
 	<string>Used to add contacts to address book.</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Lighthouse_PersonalUse.ttf</string>
+	</array>
 </dict>
 </plist>
