@@ -20,9 +20,12 @@
 		3B60FC8D1D67E42200A12EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B60FC8B1D67E42200A12EBC /* LaunchScreen.storyboard */; };
 		3B60FC981D67E42200A12EBC /* LinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60FC971D67E42200A12EBC /* LinkTests.swift */; };
 		3B60FCA31D67E42200A12EBC /* LinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60FCA21D67E42200A12EBC /* LinkUITests.swift */; };
-		3B6B61D01D67E70500BFD584 /* Lighthouse_PersonalUse.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B6B61CF1D67E70500BFD584 /* Lighthouse_PersonalUse.ttf */; };
 		3B914F501E0EDC6400C70B3C /* LinkDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B914F4E1E0EDC6400C70B3C /* LinkDataModel.xcdatamodeld */; };
 		3B914F531E0EDE8300C70B3C /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B914F521E0EDE8300C70B3C /* ContactTableViewCell.swift */; };
+		3BEE987D1E5BC1EF009EC24B /* PopupAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE987C1E5BC1EF009EC24B /* PopupAnimationController.swift */; };
+		3BEE987F1E5BD0EB009EC24B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE987E1E5BD0EB009EC24B /* WelcomeViewController.swift */; };
+		3BEE98821E5BD165009EC24B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE98811E5BD165009EC24B /* WelcomeViewController.xib */; };
+		3BEE98841E5BDC67009EC24B /* Lighthouse_PersonalUse.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE98831E5BDC2A009EC24B /* Lighthouse_PersonalUse.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +67,12 @@
 		3B60FC9E1D67E42200A12EBC /* LinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B60FCA21D67E42200A12EBC /* LinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkUITests.swift; sourceTree = "<group>"; };
 		3B60FCA41D67E42200A12EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B6B61CF1D67E70500BFD584 /* Lighthouse_PersonalUse.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lighthouse_PersonalUse.ttf; sourceTree = "<group>"; };
 		3B914F4F1E0EDC6400C70B3C /* LinkDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LinkDataModel.xcdatamodel; sourceTree = "<group>"; };
 		3B914F521E0EDE8300C70B3C /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		3BEE987C1E5BC1EF009EC24B /* PopupAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupAnimationController.swift; sourceTree = "<group>"; };
+		3BEE987E1E5BD0EB009EC24B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		3BEE98811E5BD165009EC24B /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		3BEE98831E5BDC2A009EC24B /* Lighthouse_PersonalUse.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lighthouse_PersonalUse.ttf; sourceTree = "<group>"; };
 		9C5A95D1BB9299572E2B7D24 /* Pods-Link.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Link.release.xcconfig"; path = "Pods/Target Support Files/Pods-Link/Pods-Link.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +122,7 @@
 		3B4892561D75179900F8DC22 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE98801E5BD135009EC24B /* Welcome */,
 				3BEE98781E58D76E009EC24B /* Transitions */,
 				3B60FC861D67E42200A12EBC /* Main.storyboard */,
 				3B60FC841D67E42200A12EBC /* NewContactViewController.swift */,
@@ -183,7 +190,7 @@
 				3B60FC8E1D67E42200A12EBC /* Info.plist */,
 				3B60FC891D67E42200A12EBC /* Assets.xcassets */,
 				3B0C64D31E0B7D67000927E2 /* Link-Bridging-Header.h */,
-				3B6B61CF1D67E70500BFD584 /* Lighthouse_PersonalUse.ttf */,
+				3BEE98831E5BDC2A009EC24B /* Lighthouse_PersonalUse.ttf */,
 				3B2422D81E1CA4A2009BEAF6 /* CaviarDreams_BoldItalic.ttf */,
 				3B2422D91E1CA4A2009BEAF6 /* CaviarDreams_Bold.ttf */,
 				3B2422DA1E1CA4A2009BEAF6 /* CaviarDreams_Italic.ttf */,
@@ -211,8 +218,18 @@
 		3BEE98781E58D76E009EC24B /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE987C1E5BC1EF009EC24B /* PopupAnimationController.swift */,
 			);
 			name = Transitions;
+			sourceTree = "<group>";
+		};
+		3BEE98801E5BD135009EC24B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE987E1E5BD0EB009EC24B /* WelcomeViewController.swift */,
+				3BEE98811E5BD165009EC24B /* WelcomeViewController.xib */,
+			);
+			name = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,9 +343,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEE98841E5BDC67009EC24B /* Lighthouse_PersonalUse.ttf in Resources */,
 				3B60FC8D1D67E42200A12EBC /* LaunchScreen.storyboard in Resources */,
 				3B60FC8A1D67E42200A12EBC /* Assets.xcassets in Resources */,
-				3B6B61D01D67E70500BFD584 /* Lighthouse_PersonalUse.ttf in Resources */,
+				3BEE98821E5BD165009EC24B /* WelcomeViewController.xib in Resources */,
 				3B2422DD1E1CA4A2009BEAF6 /* CaviarDreams_Bold.ttf in Resources */,
 				3B2422DE1E1CA4A2009BEAF6 /* CaviarDreams_Italic.ttf in Resources */,
 				3B2422DC1E1CA4A2009BEAF6 /* CaviarDreams_BoldItalic.ttf in Resources */,
@@ -407,10 +425,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B60FC851D67E42200A12EBC /* NewContactViewController.swift in Sources */,
+				3BEE987D1E5BC1EF009EC24B /* PopupAnimationController.swift in Sources */,
 				3B914F531E0EDE8300C70B3C /* ContactTableViewCell.swift in Sources */,
 				3B48925A1D751BED00F8DC22 /* ContactsViewController.swift in Sources */,
 				3B914F501E0EDC6400C70B3C /* LinkDataModel.xcdatamodeld in Sources */,
 				3B60FC831D67E42200A12EBC /* AppDelegate.swift in Sources */,
+				3BEE987F1E5BD0EB009EC24B /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
