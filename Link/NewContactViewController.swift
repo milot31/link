@@ -69,6 +69,9 @@ class NewContactViewController: UIViewController {
             self.revealViewController().rightViewRevealOverdraw = 0
         }
         
+        navigationItem.leftBarButtonItem?.target = self
+        navigationItem.leftBarButtonItem?.action = #selector(showWelcomeViewController)
+        
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
         phoneNumberTextField.delegate = self
@@ -126,9 +129,13 @@ class NewContactViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if UserDefaults.getUserNameForSMS() == nil {
-            let view = storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
-            present(view, animated: true, completion: nil)
+            showWelcomeViewController()
         }
+    }
+    
+    func showWelcomeViewController() {
+        let view = storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+        present(view, animated: true, completion: nil)
     }
     
     func navBarSetup() {

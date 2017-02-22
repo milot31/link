@@ -111,6 +111,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IFC-7F-bC5">
+                        <barButtonItem key="leftBarButtonItem" image="settings" id="ceO-IK-2rX">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="users" id="rR7-jT-AC7">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -154,7 +157,7 @@
                                         <rect key="frame" x="0.0" y="28" width="260" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6WL-X6-1q6" id="Kjt-cP-qbl">
-                                            <rect key="frame" x="0.0" y="0.0" width="260" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="260" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-mG-lEO">
@@ -167,7 +170,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="CTc-HT-91X">
-                                                    <rect key="frame" x="8" y="35" width="244" height="15"/>
+                                                    <rect key="frame" x="8" y="34" width="244" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="TvC-ba-ARB"/>
                                                     </constraints>
@@ -176,7 +179,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uy3-D7-Eqd">
-                                                    <rect key="frame" x="8" y="53" width="244" height="15"/>
+                                                    <rect key="frame" x="8" y="52" width="244" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="Ygq-oy-WOI"/>
                                                     </constraints>
@@ -358,7 +361,7 @@
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M6C-2c-fBn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="M6C-2c-fBn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -373,6 +376,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="settings" width="32" height="32"/>
         <image name="users" width="32" height="32"/>
     </resources>
 </document>
