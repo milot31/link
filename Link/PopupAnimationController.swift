@@ -14,7 +14,6 @@ class PopupAnimationController : NSObject, UIViewControllerAnimatedTransitioning
     
     var reverse: Bool = false
     let animationDuration = 0.25
-    var calculateHeight = false
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return animationDuration
@@ -35,22 +34,9 @@ class PopupAnimationController : NSObject, UIViewControllerAnimatedTransitioning
             
             let center = fromView?.center
             
-            if calculateHeight {
-                //create temp label for height caculations
-                let label:UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 285 - 44, height: CGFloat.greatestFiniteMagnitude))
-                label.numberOfLines = 0
-                label.lineBreakMode = NSLineBreakMode.byWordWrapping
-                label.font = UIFont(name: "Montserrat-UltraLight", size: 15)
-                label.text = (toVC as! PopupViewController).descText
-                
-                label.sizeToFit()
-                let height = label.frame.height
-                
-                toView?.frame = CGRect(x: (center?.x)! - (285 * 0.5), y: (center?.y)! - ((height + 60 + 44 + 44) * 0.5) , width: 285, height: height + 60 + 44 + 44)
-            }
-            else {
-                toView?.frame = CGRect(x: (center?.x)! - (285 * 0.5), y: (center?.y)! - ((500) * 0.5) , width: 285, height: 500)
-            }
+            
+            toView?.frame = CGRect(x: (center?.x)! - (285 * 0.5), y: (center?.y)! - ((500) * 0.5) , width: 285, height: 500)
+            
             
             // Set initial scale to zero
             toView?.transform = CGAffineTransform(scaleX: kInitialScale, y: kInitialScale)

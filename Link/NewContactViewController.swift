@@ -122,6 +122,15 @@ class NewContactViewController: UIViewController {
         navBarSetup()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if UserDefaults.getUserNameForSMS() == nil {
+            let view = storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+            present(view, animated: true, completion: nil)
+        }
+    }
+    
     func navBarSetup() {
         navigationController?.navigationBar.barTintColor = UIColor.white
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
@@ -150,7 +159,8 @@ class NewContactViewController: UIViewController {
             
             let messageVC = MFMessageComposeViewController()
             
-            messageVC.body = "Hey \(firstNameTextField.text!), Phil added you as a contact on Link!";
+            let name = UserDefaults.getUserNameForSMS()
+            messageVC.body = "Hey \(firstNameTextField.text!), \(name) added you as a contact on Link!";
             messageVC.recipients = ["\(phoneNumberTextField.text!)"]
             messageVC.messageComposeDelegate = self;
             

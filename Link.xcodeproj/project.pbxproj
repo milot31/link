@@ -26,6 +26,7 @@
 		3BEE987F1E5BD0EB009EC24B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE987E1E5BD0EB009EC24B /* WelcomeViewController.swift */; };
 		3BEE98821E5BD165009EC24B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE98811E5BD165009EC24B /* WelcomeViewController.xib */; };
 		3BEE98841E5BDC67009EC24B /* Lighthouse_PersonalUse.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE98831E5BDC2A009EC24B /* Lighthouse_PersonalUse.ttf */; };
+		3BEE98871E5D23A4009EC24B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE98861E5D23A4009EC24B /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3BEE987E1E5BD0EB009EC24B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3BEE98811E5BD165009EC24B /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		3BEE98831E5BDC2A009EC24B /* Lighthouse_PersonalUse.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lighthouse_PersonalUse.ttf; sourceTree = "<group>"; };
+		3BEE98861E5D23A4009EC24B /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		9C5A95D1BB9299572E2B7D24 /* Pods-Link.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Link.release.xcconfig"; path = "Pods/Target Support Files/Pods-Link/Pods-Link.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +124,8 @@
 		3B4892561D75179900F8DC22 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3BEE98801E5BD135009EC24B /* Welcome */,
 				3BEE98781E58D76E009EC24B /* Transitions */,
+				3BEE98801E5BD135009EC24B /* Welcome */,
 				3B60FC861D67E42200A12EBC /* Main.storyboard */,
 				3B60FC841D67E42200A12EBC /* NewContactViewController.swift */,
 				3B4892591D751BED00F8DC22 /* ContactsViewController.swift */,
@@ -157,6 +159,7 @@
 		3B60FC811D67E42200A12EBC /* Link */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE98851E5D2391009EC24B /* Util */,
 				3B4892561D75179900F8DC22 /* Views */,
 				3B914F0D1E0ED51900C70B3C /* Data Models */,
 				3B60FC821D67E42200A12EBC /* AppDelegate.swift */,
@@ -230,6 +233,14 @@
 				3BEE98811E5BD165009EC24B /* WelcomeViewController.xib */,
 			);
 			name = Welcome;
+			sourceTree = "<group>";
+		};
+		3BEE98851E5D2391009EC24B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE98861E5D23A4009EC24B /* UserDefaults.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,6 +439,7 @@
 				3BEE987D1E5BC1EF009EC24B /* PopupAnimationController.swift in Sources */,
 				3B914F531E0EDE8300C70B3C /* ContactTableViewCell.swift in Sources */,
 				3B48925A1D751BED00F8DC22 /* ContactsViewController.swift in Sources */,
+				3BEE98871E5D23A4009EC24B /* UserDefaults.swift in Sources */,
 				3B914F501E0EDC6400C70B3C /* LinkDataModel.xcdatamodeld in Sources */,
 				3B60FC831D67E42200A12EBC /* AppDelegate.swift in Sources */,
 				3BEE987F1E5BD0EB009EC24B /* WelcomeViewController.swift in Sources */,
