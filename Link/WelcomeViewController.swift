@@ -37,6 +37,7 @@ class WelcomeViewController: UIViewController {
         nameTextField.layer.borderColor = UIColor.white.cgColor
         nameTextField.layer.borderWidth = 1
         nameTextField.tintColor = UIColor.white
+        doneButton.layer.cornerRadius = 8
     }
     
     

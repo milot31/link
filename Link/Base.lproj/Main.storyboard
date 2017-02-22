@@ -19,8 +19,8 @@
         <array key="CaviarDreams_BoldItalic.ttf">
             <string>CaviarDreams-BoldItalic</string>
         </array>
-        <array key="SFUIText.ttf">
-            <string>.SFUIText</string>
+        <array key="Lighthouse_PersonalUse.ttf">
+            <string>LighthousePersonalUse</string>
         </array>
     </customFonts>
     <scenes>
@@ -154,7 +154,7 @@
                                         <rect key="frame" x="0.0" y="28" width="260" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6WL-X6-1q6" id="Kjt-cP-qbl">
-                                            <rect key="frame" x="0.0" y="0.0" width="260" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="260" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-mG-lEO">
@@ -251,7 +251,7 @@
                                             <constraint firstAttribute="height" constant="54" id="KIR-37-TkF"/>
                                             <constraint firstAttribute="width" constant="173" id="bDv-lF-CvG"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".SFUIText" family=".SF UI Text" pointSize="50"/>
+                                        <fontDescription key="fontDescription" name="LighthousePersonalUse" family="Lighthouse Personal Use" pointSize="46"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -263,30 +263,34 @@
                                     <constraint firstItem="zds-KR-4JZ" firstAttribute="centerX" secondItem="yGW-EO-76i" secondAttribute="centerX" id="d2c-Kb-3vH"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeS-o9-JhX">
+                                <rect key="frame" x="3" y="50" width="369" height="614"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKE-MW-j1o">
-                                <rect key="frame" x="20" y="77" width="335" height="138"/>
+                                <rect key="frame" x="20" y="58" width="335" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="138" id="qpT-So-Q3n"/>
+                                    <constraint firstAttribute="height" constant="150" id="qpT-So-Q3n"/>
                                 </constraints>
-                                <string key="text">Welcome to Link!  We are here to make adding new contacts simpler and easier.  Before you start getting people's numbers, let's get your name first!  We'll use this name when queuing up your text messages.</string>
-                                <fontDescription key="fontDescription" name=".SFUIText" family=".SF UI Text" pointSize="17"/>
+                                <string key="text">Welcome to Link!  We're here to make saving new contacts simpler and easier.  Before you start adding people's numbers, let's get your name first!  We'll use this name when queuing up your text messages.</string>
+                                <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0yU-Cv-EZS">
-                                <rect key="frame" x="20" y="272" width="335" height="50"/>
+                                <rect key="frame" x="20" y="248" width="335" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Tzw-jq-dyS"/>
+                                    <constraint firstAttribute="height" constant="35" id="Tzw-jq-dyS"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJJ-fQ-NvO">
-                                <rect key="frame" x="20" y="395" width="335" height="50"/>
+                                <rect key="frame" x="20" y="323" width="335" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="fd4-Dx-VyC"/>
+                                    <constraint firstAttribute="height" constant="35" id="fd4-Dx-VyC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="28"/>
                                 <state key="normal" title="Done">
@@ -294,16 +298,20 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HKE-MW-j1o" firstAttribute="leading" secondItem="8ND-J1-tcU" secondAttribute="leading" constant="20" id="2cT-Oq-Kpj"/>
                             <constraint firstItem="yGW-EO-76i" firstAttribute="leading" secondItem="8ND-J1-tcU" secondAttribute="leadingMargin" constant="-16" id="7Pv-MG-epf"/>
-                            <constraint firstItem="HKE-MW-j1o" firstAttribute="top" secondItem="yGW-EO-76i" secondAttribute="bottom" constant="27" id="PNH-e1-0iO"/>
+                            <constraint firstAttribute="trailing" secondItem="EeS-o9-JhX" secondAttribute="trailing" constant="3" id="MtL-hR-sHr"/>
+                            <constraint firstItem="dhV-vd-vsY" firstAttribute="top" secondItem="EeS-o9-JhX" secondAttribute="bottom" constant="3" id="N7f-Ib-WzB"/>
+                            <constraint firstItem="HKE-MW-j1o" firstAttribute="top" secondItem="yGW-EO-76i" secondAttribute="bottom" constant="8" id="PNH-e1-0iO"/>
                             <constraint firstItem="qJJ-fQ-NvO" firstAttribute="leading" secondItem="8ND-J1-tcU" secondAttribute="leading" constant="20" id="R98-zI-gm1"/>
-                            <constraint firstItem="0yU-Cv-EZS" firstAttribute="top" secondItem="HKE-MW-j1o" secondAttribute="bottom" constant="57" id="Sjj-bX-MvV"/>
+                            <constraint firstItem="EeS-o9-JhX" firstAttribute="top" secondItem="yGW-EO-76i" secondAttribute="bottom" id="SQy-Ry-qoX"/>
+                            <constraint firstItem="0yU-Cv-EZS" firstAttribute="top" secondItem="HKE-MW-j1o" secondAttribute="bottom" constant="40" id="Sjj-bX-MvV"/>
+                            <constraint firstItem="EeS-o9-JhX" firstAttribute="leading" secondItem="8ND-J1-tcU" secondAttribute="leading" constant="3" id="XoM-WX-oj8"/>
                             <constraint firstAttribute="trailing" secondItem="qJJ-fQ-NvO" secondAttribute="trailing" constant="20" id="Yx3-IT-nRJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yGW-EO-76i" secondAttribute="trailing" constant="-16" id="ZG1-LK-RcM"/>
-                            <constraint firstItem="qJJ-fQ-NvO" firstAttribute="top" secondItem="0yU-Cv-EZS" secondAttribute="bottom" constant="73" id="hQx-tl-ecQ"/>
+                            <constraint firstItem="qJJ-fQ-NvO" firstAttribute="top" secondItem="0yU-Cv-EZS" secondAttribute="bottom" constant="40" id="hQx-tl-ecQ"/>
                             <constraint firstAttribute="trailing" secondItem="0yU-Cv-EZS" secondAttribute="trailing" constant="20" id="l5L-l9-aMS"/>
                             <constraint firstItem="0yU-Cv-EZS" firstAttribute="leading" secondItem="8ND-J1-tcU" secondAttribute="leading" constant="20" id="tZU-p3-N55"/>
                             <constraint firstAttribute="trailing" secondItem="HKE-MW-j1o" secondAttribute="trailing" constant="20" id="uIz-f2-iW0"/>
@@ -350,7 +358,7 @@
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="M6C-2c-fBn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M6C-2c-fBn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
