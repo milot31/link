@@ -166,8 +166,8 @@ class NewContactViewController: UIViewController {
             
             let messageVC = MFMessageComposeViewController()
             
-            let name = UserDefaults.getUserNameForSMS()
-            messageVC.body = "Hey \(firstNameTextField.text!), \(name) added you as a contact on Link!";
+            let name = UserDefaults.getUserNameForSMS()!
+            messageVC.body = "Hey \(firstNameTextField.text!), \(name) added you via Link!";
             messageVC.recipients = ["\(phoneNumberTextField.text!)"]
             messageVC.messageComposeDelegate = self;
             
@@ -268,6 +268,7 @@ extension NewContactViewController {
     
     
     func dismissKeyboard() {
+        animateFieldsOpen()
         openTextFieldAnimation = true
         view.endEditing(true)
     }
@@ -299,6 +300,8 @@ extension NewContactViewController: UITextFieldDelegate {
             phoneNumberTextField.becomeFirstResponder()
         case phoneNumberTextField:
             textField.resignFirstResponder()
+            animateFieldsOpen()
+            openTextFieldAnimation = true
         default:
             break
         }
@@ -313,8 +316,8 @@ extension NewContactViewController: UITextFieldDelegate {
     
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if openTextFieldAnimation {
-            animateFieldsOpen()
+        if !openTextFieldAnimation {
+            
         }
     }
 }

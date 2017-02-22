@@ -28,6 +28,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameTextField.delegate = self
         nameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
         nameTextField.attributedPlaceholder = NSAttributedString(string:"your name", attributes:[NSForegroundColorAttributeName: UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.00)])
         nameTextField.textColor = UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.00)
@@ -40,9 +41,6 @@ class WelcomeViewController: UIViewController {
         doneButton.layer.cornerRadius = 8
     }
     
-    
-    
-    
     @IBAction func doneButtonTapped(_ sender: Any) {
         if let txt = nameTextField.text {
             if txt.characters.count > 0 {
@@ -50,6 +48,14 @@ class WelcomeViewController: UIViewController {
                 dismiss(animated: true, completion: nil)
             }
         }
+    }
+}
+
+
+extension WelcomeViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
     }
 }
 
